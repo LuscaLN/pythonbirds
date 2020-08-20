@@ -22,3 +22,4 @@ if __name__ == '__main__':
         print(filho.nome)
     del renato.filhos
     print(renato.__dict__)
+    print(lucas.__dict__)
