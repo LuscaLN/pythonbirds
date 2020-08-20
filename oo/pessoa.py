@@ -1,5 +1,12 @@
 class Pessoa:
     olhos=2
+    @staticmethod
+    def metodo_estatico():
+        return 42
+    @classmethod
+    def nome_e_atributos_de_classe(cls):
+        return f'{cls} - olhos {cls.olhos}'
+
     def __init__(self,*filhos, nome=None, idade=35):
         self.idade = idade
         self.nome = nome
@@ -30,6 +37,8 @@ if __name__ == '__main__':
     print(renato.olhos)
     print(renato.__dict__)
     print(lucas.__dict__)
+    print(Pessoa.metodo_estatico(), renato.metodo_estatico())
+    print(Pessoa.nome_e_atributos_de_classe(), renato.nome_e_atributos_de_classe())
 
 
 
