@@ -17,14 +17,11 @@ if __name__ == '__main__':
 
     print(renato.cumprimentar())
     print(renato.nome, renato.idade)
-<<<<<<< HEAD
     renato.sobrenome='nogueira'
     for filho in renato.filhos:
         print(filho.nome)
     del renato.filhos
     print(renato.__dict__)
     print(lucas.__dict__)
-=======
-    for filho in renato.filhos:
-        print(filho.nome)
->>>>>>> origin/simples
+
+
