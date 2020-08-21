@@ -24,6 +24,13 @@ class carro:
                 self.cont = self.cont+1
             else:
                 self.cont = 0
+        def virar_a_esquerda(self):
+            if self.cont == 0:
+                self.cont = 3
+            else:
+                self.cont = self.cont-1
+
+
 
     direcao = Direcao()
 
@@ -46,6 +53,15 @@ class carro:
         print(direcao.rumo[direcao.cont])
         direcao.virar_a_direita()
         print(direcao.rumo[direcao.cont])
+        direcao.virar_a_esquerda()
+        print(direcao.rumo[direcao.cont])
+        direcao.virar_a_esquerda()
+        print(direcao.rumo[direcao.cont])
+        direcao.virar_a_esquerda()
+        print(direcao.rumo[direcao.cont])
+        direcao.virar_a_esquerda()
+        print(direcao.rumo[direcao.cont])
+
 
 
 
